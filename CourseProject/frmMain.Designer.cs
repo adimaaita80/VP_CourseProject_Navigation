@@ -33,6 +33,7 @@
             this.btnNavAddFoodCategory = new System.Windows.Forms.Button();
             this.btnNavAddFoodItem = new System.Windows.Forms.Button();
             this.btnMakeOrder = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlSideMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,6 +41,7 @@
             // 
             this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pnlSideMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSideMenu.Controls.Add(this.button1);
             this.pnlSideMenu.Controls.Add(this.btnMakeOrder);
             this.pnlSideMenu.Controls.Add(this.btnNavAddFoodItem);
             this.pnlSideMenu.Controls.Add(this.btnNavAddFoodCategory);
@@ -88,6 +90,16 @@
             this.btnMakeOrder.UseVisualStyleBackColor = true;
             this.btnMakeOrder.Click += new System.EventHandler(this.btnMakeOrder_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(33, 334);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 39);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +121,7 @@
         private System.Windows.Forms.Button btnMakeOrder;
         private System.Windows.Forms.Button btnNavAddFoodItem;
         private System.Windows.Forms.Button btnNavAddFoodCategory;
+        private System.Windows.Forms.Button button1;
     }
 }
 

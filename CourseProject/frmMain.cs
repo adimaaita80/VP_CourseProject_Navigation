@@ -55,5 +55,13 @@ namespace CourseProject
             pnlMain.Controls.Add(currentForm);
             currentForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            currentForm.Close();
+
+            currentForm = new frmBigButtons();
+            SetFormSettings();
+        }
     }
 }
