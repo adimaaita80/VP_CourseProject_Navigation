@@ -14,11 +14,13 @@ namespace CourseProject
     public partial class frmMain : Form
     {
         private Form currentForm;
+        private User _user;
 
-        public frmMain()
+        public frmMain(User user)
         {
             InitializeComponent();
             currentForm = new Form();
+            _user = user;
         }
 
         private void btnNavAddFoodCategory_Click(object sender, EventArgs e)
@@ -61,6 +63,19 @@ namespace CourseProject
             currentForm.Close();
 
             currentForm = new frmBigButtons();
+            SetFormSettings();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Welcome " + _user.Name;
+        }
+
+        private void btnCreateUser_Click(object sender, EventArgs e)
+        {
+            currentForm.Close();
+
+            currentForm = new frmAddUser();
             SetFormSettings();
         }
     }
